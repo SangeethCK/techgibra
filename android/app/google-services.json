@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "169390223436",
+    "project_id": "interviewapp-4c251",
+    "storage_bucket": "interviewapp-4c251.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169390223436:android:ad64588403e5fe51f284e9",
+        "android_client_info": {
+          "package_name": "com.example.techgibra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169390223436-uthn1c393lrtduh60v5i2oi1jtvett0l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASLZNoku_QNDbjVUPQ-Bfv1F_Xj4dzTw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169390223436-uthn1c393lrtduh60v5i2oi1jtvett0l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
