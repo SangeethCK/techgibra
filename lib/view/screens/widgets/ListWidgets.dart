@@ -151,15 +151,24 @@ class _ListWidgetsState extends State<ListWidgets> {
                                 SizedBox(
                                     height: 25,
                                     width: 30,
-                                    child: Image.network(doc['book'])),
+                                    child: Image.network(
+                                      doc['book'],
+                                      color: Colors.grey,
+                                    )),
                                 SizedBox(
                                     height: 25,
                                     width: 30,
-                                    child: Image.network(doc['mini'])),
+                                    child: Image.network(
+                                      doc['mini'],
+                                      color: Colors.grey,
+                                    )),
                                 SizedBox(
                                     height: 25,
                                     width: 30,
-                                    child: Image.network(doc['more'])),
+                                    child: Image.network(
+                                      doc['more'],
+                                      color: Colors.grey,
+                                    )),
                               ],
                             ),
                           ],

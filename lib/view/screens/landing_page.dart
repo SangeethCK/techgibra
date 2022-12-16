@@ -27,6 +27,7 @@ class _LandingPageState extends State<LandingPage> {
         bottomNavigationBar: SizedBox(
           height: 60,
           child: BottomNavigationBar(
+              elevation: 0,
               type: BottomNavigationBarType.fixed,
               selectedItemColor: Colors.orange,
               unselectedItemColor: Colors.grey,
