@@ -16,7 +16,6 @@ class _ListWidgetsState extends State<ListWidgets> {
   bool moreData = true;
   bool isLoading = false;
   DocumentSnapshot? lastDocument;
- 
   late QuerySnapshot<Map<String, dynamic>> querySnapshot;
   @override
   void initState() {
@@ -149,17 +148,17 @@ class _ListWidgetsState extends State<ListWidgets> {
                                   dividedBy: 4,
                                 ),
                                 SizedBox(
-                                    height: 30,
-                                    width: 30,
-                                    child: Image.network(doc['more'])),
-                                SizedBox(
-                                    height: 30,
+                                    height: 25,
                                     width: 30,
                                     child: Image.network(doc['book'])),
                                 SizedBox(
-                                    height: 30,
+                                    height: 25,
                                     width: 30,
                                     child: Image.network(doc['mini'])),
+                                SizedBox(
+                                    height: 25,
+                                    width: 30,
+                                    child: Image.network(doc['more'])),
                               ],
                             ),
                           ],

@@ -23,10 +23,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 90,
-        leadingWidth: 120,
+        leadingWidth: 130,
         elevation: 1,
         leading: SizedBox(
-          height: 80,
+          height: 90,
           width: 100,
           child: Image.asset(
             AssetImages.logoImage,
@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   ),
                 ]),
           ),
-           const Expanded(child: ListWidgets())
+          const Expanded(child: ListWidgets())
         ],
       ),
     );
