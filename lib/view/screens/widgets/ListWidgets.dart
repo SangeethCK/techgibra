@@ -57,23 +57,22 @@ class ListWidgets extends StatelessWidget {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Align(
-                                    alignment: Alignment.centerLeft,
-                                    child: Text(
-                                      doc['title'],
-                                      overflow: TextOverflow.visible,
-                                      textWidthBasis:
-                                          TextWidthBasis.longestLine,
-                                      maxLines: 2,
-                                      textAlign: TextAlign.left,
-                                      style: SafeGoogleFont(
-                                        'Poppins',
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w700,
-                                        height: 1,
-                                        color: const Color(0xff212523),
-                                      ),
-                                    )),
+                                Flexible(
+                                  child: Text(
+                                    doc['title'],
+                                    overflow: TextOverflow.ellipsis,
+                                    textWidthBasis: TextWidthBasis.longestLine,
+                                    maxLines: 2,
+                                    textAlign: TextAlign.left,
+                                    style: SafeGoogleFont(
+                                      'Poppins',
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700,
+                                      height: 1,
+                                      color: const Color(0xff212523),
+                                    ),
+                                  ),
+                                ),
                                 SizedBox(
                                   height: 80,
                                   width: 100,
@@ -84,7 +83,9 @@ class ListWidgets extends StatelessWidget {
                                 )
                               ],
                             ),
-                            const AppPadding(),
+                            const AppPadding(
+                              dividedBy: 4,
+                            ),
                             Text(
                               doc['content'],
                               maxLines: 4,
