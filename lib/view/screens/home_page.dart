@@ -43,34 +43,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             padding: const EdgeInsets.all(8.0),
             child: Image.asset(
               AssetImages.notificationIcon,
-              width: 35,
+              width: 30,
             ),
           )
         ],
       ),
-      // appBar: AppBar(
-      //   toolbarHeight: 90,
-      //   leadingWidth: 130,
-      //   elevation: 1,
-      //   leading: SizedBox(
-      //     height: 90,
-      //     width: 100,
-      //     child: Image.asset(
-      //       AssetImages.logoImage,
-      //       fit: BoxFit.cover,
-      //     ),
-      //   ),
-      //   title: TextField(
-      //     scrollPadding: EdgeInsets.zero,
-      //     decoration: InputDecoration(
-      //         contentPadding: EdgeInsets.zero,
-      //         hintText: 'Search Medium',
-      //         icon: SizedBox(
-      //             height: 20, child: Image.asset(AssetImages.searchIcon)),
-      //         border: InputBorder.none),
-      //   ),
-      //   backgroundColor: Colors.white,
-      // ),
       backgroundColor: Colors.white,
       body: Column(
         children: [
