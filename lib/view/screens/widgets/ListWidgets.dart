@@ -168,10 +168,10 @@ class _ListWidgetsState extends State<ListWidgets> {
                     }),
               ),
               isLoading
-                  ? Center(
+                  ? const Center(
                       child: CircularProgressIndicator(),
                     )
-                  : SizedBox()
+                  : const SizedBox()
             ],
           )),
     );
