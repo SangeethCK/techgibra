@@ -60,6 +60,7 @@ class _ListWidgetsState extends State<ListWidgets> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
           child: Column(
