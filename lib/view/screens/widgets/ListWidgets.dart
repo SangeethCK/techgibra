@@ -126,7 +126,7 @@ class _ListWidgetsState extends State<ListWidgets> {
                               dividedBy: 4,
                             ),
                             Text(
-                              doc['content'],
+                              doc['content'].toString(),
                               maxLines: 4,
                               textAlign: TextAlign.left,
                             ),
