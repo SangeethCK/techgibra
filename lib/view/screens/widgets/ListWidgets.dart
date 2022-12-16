@@ -49,7 +49,7 @@ class _ListWidgetsState extends State<ListWidgets> {
       list.addAll(querySnapshot.docs.map((e) => e.data()));
       isLoading = false;
       setState(() {});
-      if (querySnapshot.docs.length < 4) {
+      if (querySnapshot.docs.length < 3) {
         moreData = false;
       } else {
         print('No More Data');
