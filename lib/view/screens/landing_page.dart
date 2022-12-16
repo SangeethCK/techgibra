@@ -25,7 +25,7 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: SizedBox(
-          height: 75,
+          height: 60,
           child: BottomNavigationBar(
               type: BottomNavigationBarType.fixed,
               selectedItemColor: Colors.orange,
@@ -39,19 +39,19 @@ class _LandingPageState extends State<LandingPage> {
               items: [
                 BottomNavigationBarItem(
                     icon: SizedBox(
-                        height: 30, child: Image.asset(AssetImages.home)),
+                        height: 25, child: Image.asset(AssetImages.home)),
                     label: ''),
                 BottomNavigationBarItem(
                     icon: SizedBox(
-                        height: 30, child: Image.asset(AssetImages.search)),
+                        height: 25, child: Image.asset(AssetImages.search)),
                     label: ''),
                 BottomNavigationBarItem(
                     icon: SizedBox(
-                        height: 30, child: Image.asset(AssetImages.bookmark)),
+                        height: 25, child: Image.asset(AssetImages.bookmark)),
                     label: ''),
                 BottomNavigationBarItem(
                     icon: SizedBox(
-                        height: 30, child: Image.asset(AssetImages.user)),
+                        height: 25, child: Image.asset(AssetImages.user)),
                     label: ''),
               ]),
         ),
