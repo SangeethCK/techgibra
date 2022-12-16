@@ -60,6 +60,11 @@ class _ListWidgetsState extends State<ListWidgets> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
+        onPressed: () {},
+        child: const Icon(Icons.add),
+      ),
       backgroundColor: Colors.white,
       body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
