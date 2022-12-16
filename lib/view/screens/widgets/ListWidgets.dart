@@ -16,7 +16,7 @@ class _ListWidgetsState extends State<ListWidgets> {
   bool moreData = true;
   bool isLoading = false;
   DocumentSnapshot? lastDocument;
-  int document = 3;
+ 
   late QuerySnapshot<Map<String, dynamic>> querySnapshot;
   @override
   void initState() {
@@ -38,15 +38,16 @@ class _ListWidgetsState extends State<ListWidgets> {
     if (moreData) {
       final coleectionReference = _firestore.collection('usersdata');
       if (lastDocument == null) {
-        querySnapshot = await coleectionReference.limit(document).get();
+        querySnapshot = await coleectionReference.limit(3).get();
       } else {
         querySnapshot = await coleectionReference
-            .limit(document)
+            .limit(3)
             .startAfterDocument(lastDocument!)
             .get();
       }
       lastDocument = querySnapshot.docs.last;
       list.addAll(querySnapshot.docs.map((e) => e.data()));
+      print(list.length);
       isLoading = false;
       setState(() {});
       if (querySnapshot.docs.length < 3) {
@@ -75,7 +76,6 @@ class _ListWidgetsState extends State<ListWidgets> {
                       );
                     },
                     itemBuilder: (context, index) {
-                      // var doc = snapshot.data!.docs[index];
                       var doc = list[index];
                       return Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 5),
@@ -167,7 +167,7 @@ class _ListWidgetsState extends State<ListWidgets> {
                       );
                     }),
               ),
-              isLoading
+              isLoading == true
                   ? const Center(
                       child: CircularProgressIndicator(),
                     )
